@@ -31,7 +31,15 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+    ["<C-p>"] = [["+gP]],
+    ["<F12>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
+  },
+  v = {
+    ["<C-c>"] = [["+y]],
+    ["<C-x>"] = [["+x]],
+    ["f"] = vim.lsp.buf.format,
+    ["s"] = ":!sort<cr>",
   },
   t = {
     -- setting a mapping to false will disable it
