@@ -17,13 +17,19 @@ return {
   },
 
   -- Packs
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.cmake" },
+  { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.rust" },
 
   -- Version Control
   { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
+
+  -- Code runner
+  { import = "astrocommunity.code-runner.sniprun" },
 }
