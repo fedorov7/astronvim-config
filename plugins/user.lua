@@ -9,4 +9,10 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  --
+  "tpope/vim-abolish",
+  "tpope/vim-fugitive",
+  "fedorov7/vim-uefi",
+  "fedorov7/ksslint",
+  "mbbill/fencview",
 }
