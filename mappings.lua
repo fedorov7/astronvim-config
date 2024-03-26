@@ -32,14 +32,27 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+    -- paste system clipboard
     ["<C-p>"] = [["+gP]],
+    -- file explorer toggle
     ["<F12>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
+    -- git-blame
+    ["<leader>gg"] = { "<cmd>GitBlameToggle<cr>", desc = "Toggle git blame" },
+    ["<leader>gx"] = { "<cmd>GitBlameCopyFileURL<cr>", desc = "Copy current line remote url to clipboard" },
+    -- code runner
+    ["<leader>r"] = { "<cmd>SnipRun<cr>" },
   },
   v = {
+    -- copy to system clipboard
     ["<C-c>"] = [["+y]],
+    -- cut to system clipboard
     ["<C-x>"] = [["+x]],
+    -- range format
     ["f"] = vim.lsp.buf.format,
+    -- range sort lines
     ["s"] = ":!sort<cr>",
+    -- code runner
+    ["<leader>r"] = { "<cmd>SnipRun<cr>" },
   },
   t = {
     -- setting a mapping to false will disable it
