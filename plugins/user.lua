@@ -10,8 +10,8 @@ return {
   --   end,
   -- },
   --
-  "tpope/vim-abolish",
-  "fedorov7/vim-uefi",
-  "fedorov7/ksslint",
-  "mbbill/fencview",
+  { "tpope/vim-abolish", lazy = false },
+  { "fedorov7/vim-uefi", ft = { "c", "uefi" } },
+  { "fedorov7/ksslint", ft = "c" },
+  { "mbbill/fencview", ft = "c" },
 }
